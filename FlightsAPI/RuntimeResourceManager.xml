@@ -1,0 +1,4 @@
+<RuntimeResourceManager>
+<RuntimeResource><Key>{Flights_REST!Input.TablePath}</Key><Path>Local</Path><Value>..\..\..\..\..\Program Files (x86)\Micro Focus\UFT One\samples\Flights Application\SampleAppData.xlsx</Value><AddinId>DataAwarenessDependencyResolver</AddinId></RuntimeResource>
+<RuntimeResource><Key>{Flights_REST!Output.TablePath}</Key><Path>Local</Path><Value>..\..\..\..\..\Program Files (x86)\Micro Focus\UFT One\samples\Flights Application\SampleAppData.xlsx</Value><AddinId>DataAwarenessDependencyResolver</AddinId></RuntimeResource>
+</RuntimeResourceManager>

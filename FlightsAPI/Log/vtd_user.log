@@ -1,0 +1,260 @@
+2023-06-06 10:28:25,581 [1] INFO  - Loaded appender: FileAppenderInternal
+2023-06-06 10:28:25,589 [1] INFO  - Loaded appender: FileAppenderExternal
+2023-06-06 10:28:25,589 [1] INFO  - Loaded appender: UserLoggerAppender
+2023-06-06 10:28:25,590 [1] INFO  - Loaded appender: FileAppenderInternal
+2023-06-06 10:28:25,590 [1] INFO  - Loaded appender: FileAppenderExternal
+2023-06-06 10:28:25,590 [1] INFO  - Loaded appender: UserLoggerAppender
+2023-06-06 10:28:25,867 [8] INFO  - Step 'Start' : Step 'Start' started
+2023-06-06 10:28:25,889 [8] INFO  - Step 'Start' ended successfully
+2023-06-06 10:28:25,891 [8] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2023-06-06 10:28:26,128 [8] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2023-06-06 10:28:26,128 [8] INFO  - Step 'ReserveOrder6' : Step 'ReserveOrder6' started
+2023-06-06 10:28:26,128 [8] INFO  - Step 'ReserveOrder6' : Fetching HTTP Url: 'http://localhost:8000/Flights_REST/FlightOrders'
+2023-06-06 10:28:26,175 [8] INFO  - Step 'ReserveOrder6' : Server returned status code: 200
+2023-06-06 10:28:26,175 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw request:
+2023-06-06 10:28:26,175 [8] INFO  - Step 'ReserveOrder6' : POST http://localhost:8000/Flights_REST/FlightOrders 1.1
+Content-Type: text/xml
+Host: localhost:8000
+Content-Length: 380
+<?xml version="1.0" encoding="utf-8"?>
+<FlightOrderDetails xmlns="HP.SOAQ.SampleApp">
+  <DepartureCity>Denver</DepartureCity>
+  <ArrivalCity>Seattle</ArrivalCity>	
+  <Class>Economy</Class>
+  <CustomerName>Ann Frank</CustomerName>
+  <DepartureDate>2115-06-01</DepartureDate>
+  <FlightNumber>1089</FlightNumber>
+  <NumberOfTickets>3</NumberOfTickets>
+ </FlightOrderDetails>
+
+2023-06-06 10:28:26,175 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw response:
+2023-06-06 10:28:26,175 [8] INFO  - Step 'ReserveOrder6' : HTTP/1.1 200 OK
+Content-Length: 180
+Content-Type: text/xml; charset=utf-8
+Date: Tue, 06 Jun 2023 10:28:26 GMT
+Server: Microsoft-HTTPAPI/2.0
+<CreatedOrderParams xmlns="HP.SOAQ.SampleApp" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><OrderNumber>126</OrderNumber><TotalPrice>1767.6</TotalPrice></CreatedOrderParams>
+2023-06-06 10:28:26,175 [8] INFO  - Checkpoint 0: "126" > "10" passed
+2023-06-06 10:28:26,191 [8] ERROR - Checkpoint 1: "1767.6" < "1000" failed
+2023-06-06 10:28:26,191 [8] INFO  - Step 'ReserveOrder6' ended successfully
+2023-06-06 10:28:26,191 [8] INFO  - Step 'Iteration 1' ended successfully
+2023-06-06 10:28:26,191 [8] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
+2023-06-06 10:28:26,191 [8] INFO  - Step 'ReserveOrder6' : Step 'ReserveOrder6' started
+2023-06-06 10:28:26,191 [8] INFO  - Step 'ReserveOrder6' : Fetching HTTP Url: 'http://localhost:8000/Flights_REST/FlightOrders'
+2023-06-06 10:28:26,206 [8] INFO  - Step 'ReserveOrder6' : Server returned status code: 200
+2023-06-06 10:28:26,206 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw request:
+2023-06-06 10:28:26,206 [8] INFO  - Step 'ReserveOrder6' : POST http://localhost:8000/Flights_REST/FlightOrders 1.1
+Content-Type: text/xml
+Host: localhost:8000
+Content-Length: 394
+<?xml version="1.0" encoding="utf-8"?>
+<FlightOrderDetails xmlns="HP.SOAQ.SampleApp">
+  <DepartureCity>San Francisco</DepartureCity>
+  <ArrivalCity>Los Angeles</ArrivalCity>	
+  <Class>Business</Class>
+  <CustomerName>John Parker</CustomerName>
+  <DepartureDate>2115-02-28</DepartureDate>
+  <FlightNumber>3233</FlightNumber>
+  <NumberOfTickets>1</NumberOfTickets>
+ </FlightOrderDetails>
+
+2023-06-06 10:28:26,206 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw response:
+2023-06-06 10:28:26,206 [8] INFO  - Step 'ReserveOrder6' : HTTP/1.1 200 OK
+Content-Length: 179
+Content-Type: text/xml; charset=utf-8
+Date: Tue, 06 Jun 2023 10:28:26 GMT
+Server: Microsoft-HTTPAPI/2.0
+<CreatedOrderParams xmlns="HP.SOAQ.SampleApp" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><OrderNumber>127</OrderNumber><TotalPrice>332.4</TotalPrice></CreatedOrderParams>
+2023-06-06 10:28:26,206 [8] INFO  - Checkpoint 0: "127" > "10" passed
+2023-06-06 10:28:26,206 [8] INFO  - Checkpoint 1: "332.4" < "1000" passed
+2023-06-06 10:28:26,206 [8] INFO  - Step 'ReserveOrder6' ended successfully
+2023-06-06 10:28:26,206 [8] INFO  - Step 'Iteration 2' ended successfully
+2023-06-06 10:28:26,206 [8] INFO  - Step 'Iteration 3' : Step 'Iteration 3' started
+2023-06-06 10:28:26,221 [8] INFO  - Step 'ReserveOrder6' : Step 'ReserveOrder6' started
+2023-06-06 10:28:26,221 [8] INFO  - Step 'ReserveOrder6' : Fetching HTTP Url: 'http://localhost:8000/Flights_REST/FlightOrders'
+2023-06-06 10:28:26,221 [8] INFO  - Step 'ReserveOrder6' : Server returned status code: 200
+2023-06-06 10:28:26,221 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw request:
+2023-06-06 10:28:26,221 [8] INFO  - Step 'ReserveOrder6' : POST http://localhost:8000/Flights_REST/FlightOrders 1.1
+Content-Type: text/xml
+Host: localhost:8000
+Content-Length: 386
+<?xml version="1.0" encoding="utf-8"?>
+<FlightOrderDetails xmlns="HP.SOAQ.SampleApp">
+  <DepartureCity>Denver</DepartureCity>
+  <ArrivalCity>Los Angeles</ArrivalCity>	
+  <Class>Business</Class>
+  <CustomerName>Dan Brown </CustomerName>
+  <DepartureDate>2115-05-30</DepartureDate>
+  <FlightNumber>6232</FlightNumber>
+  <NumberOfTickets>2</NumberOfTickets>
+ </FlightOrderDetails>
+
+2023-06-06 10:28:26,221 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw response:
+2023-06-06 10:28:26,221 [8] INFO  - Step 'ReserveOrder6' : HTTP/1.1 200 OK
+Content-Length: 177
+Content-Type: text/xml; charset=utf-8
+Date: Tue, 06 Jun 2023 10:28:26 GMT
+Server: Microsoft-HTTPAPI/2.0
+<CreatedOrderParams xmlns="HP.SOAQ.SampleApp" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><OrderNumber>128</OrderNumber><TotalPrice>416</TotalPrice></CreatedOrderParams>
+2023-06-06 10:28:26,221 [8] INFO  - Checkpoint 0: "128" > "10" passed
+2023-06-06 10:28:26,221 [8] INFO  - Checkpoint 1: "416" < "1000" passed
+2023-06-06 10:28:26,221 [8] INFO  - Step 'ReserveOrder6' ended successfully
+2023-06-06 10:28:26,221 [8] INFO  - Step 'Iteration 3' ended successfully
+2023-06-06 10:28:26,221 [8] INFO  - Step 'Iteration 4' : Step 'Iteration 4' started
+2023-06-06 10:28:26,237 [8] INFO  - Step 'ReserveOrder6' : Step 'ReserveOrder6' started
+2023-06-06 10:28:26,237 [8] INFO  - Step 'ReserveOrder6' : Fetching HTTP Url: 'http://localhost:8000/Flights_REST/FlightOrders'
+2023-06-06 10:28:26,237 [8] INFO  - Step 'ReserveOrder6' : Server returned status code: 200
+2023-06-06 10:28:26,237 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw request:
+2023-06-06 10:28:26,237 [8] INFO  - Step 'ReserveOrder6' : POST http://localhost:8000/Flights_REST/FlightOrders 1.1
+Content-Type: text/xml
+Host: localhost:8000
+Content-Length: 384
+<?xml version="1.0" encoding="utf-8"?>
+<FlightOrderDetails xmlns="HP.SOAQ.SampleApp">
+  <DepartureCity>Portland</DepartureCity>
+  <ArrivalCity>Denver</ArrivalCity>	
+  <Class>Business</Class>
+  <CustomerName>Kate Brooks</CustomerName>
+  <DepartureDate>2115-05-29</DepartureDate>
+  <FlightNumber>2220</FlightNumber>
+  <NumberOfTickets>1</NumberOfTickets>
+ </FlightOrderDetails>
+
+2023-06-06 10:28:26,237 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw response:
+2023-06-06 10:28:26,237 [8] INFO  - Step 'ReserveOrder6' : HTTP/1.1 200 OK
+Content-Length: 179
+Content-Type: text/xml; charset=utf-8
+Date: Tue, 06 Jun 2023 10:28:26 GMT
+Server: Microsoft-HTTPAPI/2.0
+<CreatedOrderParams xmlns="HP.SOAQ.SampleApp" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><OrderNumber>129</OrderNumber><TotalPrice>507.2</TotalPrice></CreatedOrderParams>
+2023-06-06 10:28:26,237 [8] INFO  - Checkpoint 0: "129" > "10" passed
+2023-06-06 10:28:26,237 [8] INFO  - Checkpoint 1: "507.2" < "1000" passed
+2023-06-06 10:28:26,237 [8] INFO  - Step 'ReserveOrder6' ended successfully
+2023-06-06 10:28:26,237 [8] INFO  - Step 'Iteration 4' ended successfully
+2023-06-06 10:28:26,253 [8] INFO  - Step 'Iteration 5' : Step 'Iteration 5' started
+2023-06-06 10:28:26,253 [8] INFO  - Step 'ReserveOrder6' : Step 'ReserveOrder6' started
+2023-06-06 10:28:26,253 [8] INFO  - Step 'ReserveOrder6' : Fetching HTTP Url: 'http://localhost:8000/Flights_REST/FlightOrders'
+2023-06-06 10:28:26,253 [8] INFO  - Step 'ReserveOrder6' : Server returned status code: 500
+2023-06-06 10:28:26,253 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw request:
+2023-06-06 10:28:26,253 [8] INFO  - Step 'ReserveOrder6' : POST http://localhost:8000/Flights_REST/FlightOrders 1.1
+Content-Type: text/xml
+Host: localhost:8000
+Content-Length: 392
+<?xml version="1.0" encoding="utf-8"?>
+<FlightOrderDetails xmlns="HP.SOAQ.SampleApp">
+  <DepartureCity>San Francisco</DepartureCity>
+  <ArrivalCity>Portland</ArrivalCity>	
+  <Class>Economy</Class>
+  <CustomerName>Frank Brosnan</CustomerName>
+  <DepartureDate>2115-05-27</DepartureDate>
+  <FlightNumber>3222</FlightNumber>
+  <NumberOfTickets>1</NumberOfTickets>
+ </FlightOrderDetails>
+
+2023-06-06 10:28:26,253 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw response:
+2023-06-06 10:28:26,253 [8] INFO  - Step 'ReserveOrder6' : HTTP/1.1 500 Internal Server Error
+Content-Length: 118
+Content-Type: application/xml; charset=utf-8
+Date: Tue, 06 Jun 2023 10:28:26 GMT
+Server: Microsoft-HTTPAPI/2.0
+<string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">This flight does not depart on this date.</string>
+2023-06-06 10:28:26,253 [8] INFO  - Step 'ReserveOrder6' : Server returned status code: 500
+2023-06-06 10:28:26,253 [8] ERROR - Step 'ReserveOrder6' : Server returned status code: 500
+2023-06-06 10:28:26,253 [8] ERROR - Step 'ReserveOrder6' ended unsuccessfully
+2023-06-06 10:28:26,269 [8] INFO  - Step 'Iteration 5' ended successfully
+2023-06-06 10:28:26,269 [8] INFO  - Step 'Iteration 6' : Step 'Iteration 6' started
+2023-06-06 10:28:26,269 [8] INFO  - Step 'ReserveOrder6' : Step 'ReserveOrder6' started
+2023-06-06 10:28:26,284 [8] INFO  - Step 'ReserveOrder6' : Fetching HTTP Url: 'http://localhost:8000/Flights_REST/FlightOrders'
+2023-06-06 10:28:26,284 [8] INFO  - Step 'ReserveOrder6' : Server returned status code: 200
+2023-06-06 10:28:26,284 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw request:
+2023-06-06 10:28:26,284 [8] INFO  - Step 'ReserveOrder6' : POST http://localhost:8000/Flights_REST/FlightOrders 1.1
+Content-Type: text/xml
+Host: localhost:8000
+Content-Length: 388
+<?xml version="1.0" encoding="utf-8"?>
+<FlightOrderDetails xmlns="HP.SOAQ.SampleApp">
+  <DepartureCity>Frankfurt</DepartureCity>
+  <ArrivalCity>Zurich</ArrivalCity>	
+  <Class>Business</Class>
+  <CustomerName>Joe Nicholson</CustomerName>
+  <DepartureDate>2115-05-28</DepartureDate>
+  <FlightNumber>13495</FlightNumber>
+  <NumberOfTickets>2</NumberOfTickets>
+ </FlightOrderDetails>
+
+2023-06-06 10:28:26,284 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw response:
+2023-06-06 10:28:26,284 [8] INFO  - Step 'ReserveOrder6' : HTTP/1.1 200 OK
+Content-Length: 179
+Content-Type: text/xml; charset=utf-8
+Date: Tue, 06 Jun 2023 10:28:26 GMT
+Server: Microsoft-HTTPAPI/2.0
+<CreatedOrderParams xmlns="HP.SOAQ.SampleApp" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><OrderNumber>130</OrderNumber><TotalPrice>654.8</TotalPrice></CreatedOrderParams>
+2023-06-06 10:28:26,284 [8] INFO  - Checkpoint 0: "130" > "10" passed
+2023-06-06 10:28:26,284 [8] INFO  - Checkpoint 1: "654.8" < "1000" passed
+2023-06-06 10:28:26,299 [8] INFO  - Step 'ReserveOrder6' ended successfully
+2023-06-06 10:28:26,299 [8] INFO  - Step 'Iteration 6' ended successfully
+2023-06-06 10:28:26,299 [8] INFO  - Step 'Iteration 7' : Step 'Iteration 7' started
+2023-06-06 10:28:26,299 [8] INFO  - Step 'ReserveOrder6' : Step 'ReserveOrder6' started
+2023-06-06 10:28:26,299 [8] INFO  - Step 'ReserveOrder6' : Fetching HTTP Url: 'http://localhost:8000/Flights_REST/FlightOrders'
+2023-06-06 10:28:26,299 [8] INFO  - Step 'ReserveOrder6' : Server returned status code: 200
+2023-06-06 10:28:26,315 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw request:
+2023-06-06 10:28:26,315 [8] INFO  - Step 'ReserveOrder6' : POST http://localhost:8000/Flights_REST/FlightOrders 1.1
+Content-Type: text/xml
+Host: localhost:8000
+Content-Length: 394
+<?xml version="1.0" encoding="utf-8"?>
+<FlightOrderDetails xmlns="HP.SOAQ.SampleApp">
+  <DepartureCity>Frankfurt</DepartureCity>
+  <ArrivalCity>Los Angeles</ArrivalCity>	
+  <Class>Economy</Class>
+  <CustomerName>Samuel Goldberg</CustomerName>
+  <DepartureDate>2115-05-26</DepartureDate>
+  <FlightNumber>20331</FlightNumber>
+  <NumberOfTickets>1</NumberOfTickets>
+ </FlightOrderDetails>
+
+2023-06-06 10:28:26,315 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw response:
+2023-06-06 10:28:26,315 [8] INFO  - Step 'ReserveOrder6' : HTTP/1.1 200 OK
+Content-Length: 184
+Content-Type: text/xml; charset=utf-8
+Date: Tue, 06 Jun 2023 10:28:26 GMT
+Server: Microsoft-HTTPAPI/2.0
+<CreatedOrderParams xmlns="HP.SOAQ.SampleApp" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><OrderNumber>131</OrderNumber><TotalPrice>336.599976</TotalPrice></CreatedOrderParams>
+2023-06-06 10:28:26,315 [8] INFO  - Checkpoint 0: "131" > "10" passed
+2023-06-06 10:28:26,315 [8] INFO  - Checkpoint 1: "336.599976" < "1000" passed
+2023-06-06 10:28:26,315 [8] INFO  - Step 'ReserveOrder6' ended successfully
+2023-06-06 10:28:26,315 [8] INFO  - Step 'Iteration 7' ended successfully
+2023-06-06 10:28:26,315 [8] INFO  - Step 'Iteration 8' : Step 'Iteration 8' started
+2023-06-06 10:28:26,315 [8] INFO  - Step 'ReserveOrder6' : Step 'ReserveOrder6' started
+2023-06-06 10:28:26,315 [8] INFO  - Step 'ReserveOrder6' : Fetching HTTP Url: 'http://localhost:8000/Flights_REST/FlightOrders'
+2023-06-06 10:28:26,331 [8] INFO  - Step 'ReserveOrder6' : Server returned status code: 200
+2023-06-06 10:28:26,331 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw request:
+2023-06-06 10:28:26,331 [8] INFO  - Step 'ReserveOrder6' : POST http://localhost:8000/Flights_REST/FlightOrders 1.1
+Content-Type: text/xml
+Host: localhost:8000
+Content-Length: 390
+<?xml version="1.0" encoding="utf-8"?>
+<FlightOrderDetails xmlns="HP.SOAQ.SampleApp">
+  <DepartureCity>Paris</DepartureCity>
+  <ArrivalCity>Portland</ArrivalCity>	
+  <Class>Business</Class>
+  <CustomerName>Joseph Birmington</CustomerName>
+  <DepartureDate>2115-05-28</DepartureDate>
+  <FlightNumber>17087</FlightNumber>
+  <NumberOfTickets>3</NumberOfTickets>
+ </FlightOrderDetails>
+
+2023-06-06 10:28:26,331 [8] INFO  - Step 'ReserveOrder6' : HTTP Raw response:
+2023-06-06 10:28:26,331 [8] INFO  - Step 'ReserveOrder6' : HTTP/1.1 200 OK
+Content-Length: 180
+Content-Type: text/xml; charset=utf-8
+Date: Tue, 06 Jun 2023 10:28:26 GMT
+Server: Microsoft-HTTPAPI/2.0
+<CreatedOrderParams xmlns="HP.SOAQ.SampleApp" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><OrderNumber>132</OrderNumber><TotalPrice>728.82</TotalPrice></CreatedOrderParams>
+2023-06-06 10:28:26,331 [8] INFO  - Checkpoint 0: "132" > "10" passed
+2023-06-06 10:28:26,331 [8] INFO  - Checkpoint 1: "728.82" < "1000" passed
+2023-06-06 10:28:26,331 [8] INFO  - Step 'ReserveOrder6' ended successfully
+2023-06-06 10:28:26,331 [8] INFO  - Step 'Iteration 8' ended successfully
+2023-06-06 10:28:26,331 [8] INFO  - Step 'Test Flow' ended successfully
+2023-06-06 10:28:26,457 [8] INFO  - Step 'End' : Step 'End' started
+2023-06-06 10:28:26,471 [8] INFO  - Step 'End' ended successfully

@@ -1,0 +1,1 @@
+<FlightOrder xmlns="HP.SOAQ.SampleApp" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Class>Business</Class><CustomerName>John Parker</CustomerName><DepartureDate>2115-02-28T12:48:00</DepartureDate><FlightNumber>3233</FlightNumber><NumberOfTickets>1</NumberOfTickets><OrderNumber>90</OrderNumber></FlightOrder>

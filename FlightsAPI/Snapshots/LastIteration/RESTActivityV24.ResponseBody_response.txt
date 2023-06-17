@@ -1,0 +1,1 @@
+<CreatedOrderParams xmlns="HP.SOAQ.SampleApp" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><OrderNumber>93</OrderNumber><TotalPrice>332.4</TotalPrice></CreatedOrderParams>

@@ -1,0 +1,5 @@
+﻿<Properties>
+  <WatchEntry0 value="strTotalPrice" />
+  <WatchEntry1 value="DataTable" />
+  <WatchEntry2 value="機票總額_out" />
+</Properties>
